@@ -1,0 +1,33 @@
+select * from user_acc where  user_type=5  --and CHKN_SLT_HSH='0952b2e80d856be411f52953f21d8bdf5cbb78d9'
+user_acc_id=61481;
+
+update users set ADMIN_USER_ACC_ID=25 where USER_NAME='mubesta';
+
+select * from user_constraints 
+
+select * from users where USER_NAME='mubesta'
+
+
+insert into users(USER_ID,USER_NAME,USER_TYPE_CD,CO_CD,PASSWORD,LAST_PASSWORD,PASSWORD_LAST_CHANGED,LASTNAME,FIRSTNAME,BIRTHDT,CHANGE_PWD_NEXT_LOGON,EXTERNAL_NAMEID,ADMIN_USER_ACC_ID)
+values(user_id_seq.nextval,'mubesta',1,'L','(!$8SJL.2TXK)T [!6N _4;G  =0V+D    2','(!$8SJL.2TXK)T [!6N _4;G  =0V+D    2',sysdate-1,'Besta','Murali',sysdate-3000,0,0,61481);
+
+INSERT INTO Users_Groups ( Users_Groups_Id,User_Id,Group_Id,Help_Required) 
+
+SELECT Users_Groups_Seq.NextVal,  
+user_id_seq.currval,ug.Group_Id,   ug.Help_Required             
+FROM  Users_Groups ug
+    inner join Users u on u.USER_ID=ug.USER_ID
+WHERE
+    LOWER(u.User_Name) IN ('jjarvis');
+    
+select * from user_acc 
+
+    
+select * from case_members  t1
+inner join UEXT_CASE_MEMBERS t2 on t2.CASE_MBR_KEY=t1.CASE_MBR_KEY 
+inner join USER_ACC t3 on t3.nameid=t1.nameid
+
+where t1.case_key=2107 order by 1 desc    
+    
+    
+    
